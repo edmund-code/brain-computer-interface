@@ -5,10 +5,14 @@ pip install speechrecognition
 
 ## Pyaudio
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 brew install portaudio
+
 pip install pyaudio
 
 ## text tp speech
+pip install -U pyobjc
+
 pip install pyttsx3
 
 ```bash
