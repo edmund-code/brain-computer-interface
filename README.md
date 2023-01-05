@@ -1,5 +1,8 @@
 # brain-computer-interface
 
+muselsl stream --address BBA4C136-A9F1-4EE3-1BF9-7CB055CBE223
+
+
 ## speechrecognition (has dependency on Pyaudio
 pip install speechrecognition
 
