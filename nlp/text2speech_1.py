@@ -1,32 +1,3 @@
-# brain-computer-interface
-
-## 
-
-Install Muse LSL with pip
-
-    pip install muselsl
-
-install muselsl
-
-muselsl stream --address BBA4C136-A9F1-4EE3-1BF9-7CB055CBE223
-
-
-## speechrecognition (has dependency on Pyaudio
-pip install speechrecognition
-
-## Pyaudio
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-brew install portaudio
-
-pip install pyaudio
-
-## text tp speech
-pip install -U pyobjc
-
-pip install pyttsx3
-
-```bash
 # Python program to translate
 # speech to text and text to speech
 
@@ -37,10 +8,8 @@ import pyttsx3
 # Initialize the recognizer
 r = sr.Recognizer()
 
-# Function to convert text to
-# speech
+# Function to convert text to speech
 def SpeakText(command):
-	
 	# Initialize the engine
 	engine = pyttsx3.init()
 	engine.say(command)
@@ -71,7 +40,7 @@ while(1):
 			MyText = r.recognize_google(audio2)
 			MyText = MyText.lower()
 
-			print("Did you say ",MyText)
+			print("Did you say ", MyText)
 			SpeakText(MyText)
 			
 	except sr.RequestError as e:
@@ -79,4 +48,3 @@ while(1):
 		
 	except sr.UnknownValueError:
 		print("unknown error occurred")
-```
