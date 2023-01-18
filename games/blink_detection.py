@@ -13,9 +13,9 @@ import pyautogui # pip install pyautogui
 
 # ********** Handling blinks **********
 def blink_handler(count, avg, std):
+    print(f"Blink detected %d, avg=%.1f, std=%.1f" % (count, avg, std))
     pyautogui.keyDown('up')
-    print("pyGame Blink detected %d, avg=%.3f, std=%.3f" % (count, avg, std))
-
+    
 # Index of the channel(s) (electrodes) to be used
 # 0 = left ear, 1 = left forehead, 2 = right forehead, 3 = right ear
 INDEX_CHANNEL = [0]

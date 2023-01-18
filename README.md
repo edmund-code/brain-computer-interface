@@ -1,14 +1,35 @@
 # brain-computer-interface
 
-## 
+## Conda and Conda Env
 
-Install Muse LSL with pip
+Install mini conda 
+	bash Miniconda3-py310_22.11.1-1-Linux-x86_64.sh
 
+Create and activae a conda environment
+	conda create -n muse_env python=3.10
+	conda activate muse_env
+
+
+## Muse LSL https://github.com/alexandrebarachant/muse-lsl
+
+Install Muse LSL
     pip install muselsl
 
-install muselsl
+A bug in Muse LSL
+muselsl is istalled in ~/opt/anaconda3/envs/muse_env/lib/python3.8/site-packages/muselsl
+and there is a bug in backends.py that need to be fixed (add .handle as shown in below)
+	value_handle = declaration_handle.handle + 1
 
-muselsl stream --address BBA4C136-A9F1-4EE3-1BF9-7CB055CBE223
+Start streaming
+	muselsl stream --address BBA4C136-A9F1-4EE3-1BF9-7CB055CBE223
+
+View the EEG stream
+	muselsl view
+
+## Dino Game
+	pip install pyautogui
+	python blink_detection
+
 
 
 ## speechrecognition (has dependency on Pyaudio
