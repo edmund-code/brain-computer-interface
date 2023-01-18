@@ -13,39 +13,39 @@ Create and activae a conda environment
 ## Muse LSL https://github.com/alexandrebarachant/muse-lsl
 
 Install Muse LSL
-    pip install muselsl
-
+	
+	pip install muselsl
+	
 A bug in Muse LSL
 muselsl is istalled in ~/opt/anaconda3/envs/muse_env/lib/python3.8/site-packages/muselsl
 and there is a bug in backends.py that need to be fixed (add .handle as shown in below)
+
 	value_handle = declaration_handle.handle + 1
 
 Start streaming
+
 	muselsl stream --address BBA4C136-A9F1-4EE3-1BF9-7CB055CBE223
 
 View the EEG stream
+
 	muselsl view
 
 ## Dino Game
 	pip install pyautogui
 	python blink_detection
 
-
-
 ## speechrecognition (has dependency on Pyaudio
-pip install speechrecognition
+	pip install speechrecognition
 
 ## Pyaudio
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-brew install portaudio
-
-pip install pyaudio
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	brew install portaudio
+	pip install pyaudio
 
 ## text tp speech
-pip install -U pyobjc
+	pip install -U pyobjc
 
-pip install pyttsx3
+	pip install pyttsx3
 
 ```bash
 # Python program to translate
